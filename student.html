@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>STUDENT FORM</h1>
+
+    <form>
+        <table border="1">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" name="age" id="age"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Course</td>
+                <td>
+                    <select name="course" id="course">
+                        <option>Select your Course</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="Javascript">Javascript</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" id="one" onclick="add()">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+
+    <table id="table2" border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
+
+  
